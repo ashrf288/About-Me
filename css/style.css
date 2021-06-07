@@ -1,6 +1,7 @@
 
 body{
     background-color: darksalmon;
+    text-align: center;
     
 }
 
@@ -12,7 +13,7 @@ div{
 }
 
 h1{
-    font: size 30px;
+    
     color: white;
   
    
