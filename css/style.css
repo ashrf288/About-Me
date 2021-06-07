@@ -6,25 +6,37 @@ body{
 
 
 div{
+    font-size: larger;
     text-align: center;
+    
 }
 
 h1{
-    height: 100px;
+    font: size 30px;
     color: white;
   
    
    
 }
 
-
-p{
+ 
+div  p{
+    margin-left: 260px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+   text-align: center;
     height: 100px;
+    width: 250px;
+    background-color: wheat;
+    
     
 
 }
 div img{
-    width: 150px;
+    margin-top: 30px;
+    width: 250px;
+    margin-top: 10px;
+    
 }
 
 

@@ -18,9 +18,9 @@ let myFavSport= prompt(`first question: what is my favorite soprt?
 
 if(myFavSport== 'boxing'){
     alert('you guessed it right, now go to the next question.')
-    console.log(myFavSport);
+    // console.log(myFavSport);
 }else if (myFavSport=='football') {
-    console.log(myFavSport);
+    // console.log(myFavSport);
 }else{ 
     alert('pls type on of the options (without the option num)');
 
@@ -33,9 +33,9 @@ let myFavCar= prompt(`second question: what is my favorite car type?
 1- lamborghini   2- lada`).toLowerCase();
 if(myFavCar=='lamborghini' ){
     alert('you guessed it right, now go to the next question.')
-    console.log(myFavSport);
+    // console.log(myFavSport);
 }else if (myFavCar=='lada'){
-    console.log(myFavSport);
+    // console.log(myFavSport);
 }else {
     alert('pls type on of the options (without the option num)');
 }
@@ -50,9 +50,9 @@ let myFavFood= prompt(`third question: what is my favorite  food?
 
 if(myFavFood== 'mansaf'){
     alert('you guessed it right, now go to the next question.')
-    console.log(myFavFood);
+    // console.log(myFavFood);
 }else if (myFavFood=='bread') {
-    console.log(myFavFood);
+    // console.log(myFavFood);
 }else{ 
     alert('pls type on of the options (without the option num)');
 
@@ -62,32 +62,34 @@ if(myFavFood== 'mansaf'){
 let myFavMovie= prompt(`fourth question: what is my favorite  movie? 
 (just type the name without the option number)
 
-1- avengers   2- justic league`).toLowerCase();
+1- avengers   2- justice league`).toLowerCase();
 
 if(myFavMovie== 'avengers'){
     alert('you guessed it right, now go to the next question.')
-    console.log(myFavMovie);
+    // console.log(myFavMovie);
 }else if (myFavMovie=='justice league') {
-    console.log(myFavMovie);
+    // console.log(myFavMovie);
 }else{ 
     alert('pls type on of the options (without the option num)');
 
 }
 
 // fifth question 
-let myFavAthlete= prompt(`fifth  question: what is my favorite car athlete? 
+let myFavAthlete= prompt(`final  question: what is my favorite car athlete? 
 (just type the name without the option number)
 
 1- messi   2- mohammed ali`).toLowerCase();
 
 if(myFavAthlete== 'mohammed ali'){
     alert('you guessed it right, now go to the next question.')
-    console.log(myFavAthlete);
+    // console.log(myFavAthlete);
 }else if (myFavAthlete=='messi') {
-    console.log(myFavAthlete);
+    // console.log(myFavAthlete);
 }else{ 
     alert('pls type on of the options (without the option num)');
 
 }
 
 
+alert(`so ${name} I hope you liked that quiz and found it entertaining
+have a good day `);
