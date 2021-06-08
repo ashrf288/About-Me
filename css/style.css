@@ -1,29 +1,56 @@
 body{
+    
+    background-color: #1eae98;
+}
+
+
+header{
     text-align: center;
-    background-color: darksalmon;
-  
+    background-color: #233e8b;
+    color: wheat;
+    font-size: 35px;
+    padding-bottom: 20px;
+    border-radius: 15px;
+   
+}
+
+header h1 {
+    border: black;
+}
+main{
+   
+    text-align: center;
+
+}
+main div p {
+    background-color:#a9f1df ;
+    padding: 20px;
+    border-radius: 15px;
     
 }
 
 
-div{
-  
-    margin:20px;
-    font-size: 30px;
-}
-
-
-h1{
-    color:white;
+ul{
     
+    text-align: left;
+    list-style: none;
+    
+}
+  h2{
+      font-size: 33px;
+      background-color:#a9f1df ;
+      border-radius: 15px;
+  }
+.movies{
+    text-align: center;
+    color: white;
+    list-style-type: circle;
 
 }
-
-
-
 img{
     width: 40%;
 }
-p {
-    font-size: 20 px;
+footer{
+    background-color:#ffffc7 ;
+    text-align: center;
 }

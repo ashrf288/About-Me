@@ -1,14 +1,15 @@
 'use strict';
 
 
-//welcome prompt
+// //welcome prompt
 
 let name=prompt('hello, what is your name ?');
+let correctAnswers=0;
 
-alert(`nice to meet you ${name} , welcome to the quize game (me editoin) were you have to answer a series of (5 yes or no) question about me .
+alert(`nice to meet you ${name} , welcome to the quize game (me editoin) were you have to answer a series of  question about me .
 so if your ready click ok.  `);
 
-// first question
+// // first question
 
 let myFavSport= prompt(`first question: what is my favorite soprt? 
 (just type the name without the option number)
@@ -17,24 +18,28 @@ let myFavSport= prompt(`first question: what is my favorite soprt?
 
 
 if(myFavSport== 'boxing'){
-    alert('you guessed it right, now go to the next question.')
+    alert('you guessed it right, now go to the next question.');
+    correctAnswers=correctAnswers+1;
     // console.log(myFavSport);
 }else if (myFavSport=='football') {
+    alert(`you got it wrong `);
     // console.log(myFavSport);
 }else{ 
     alert('pls type on of the options (without the option num)');
 
 }
 
-//secound question
+// //secound question
 let myFavCar= prompt(`second question: what is my favorite car type? 
 (just type the name without the option number)
 
 1- lamborghini   2- lada`).toLowerCase();
 if(myFavCar=='lamborghini' ){
-    alert('you guessed it right, now go to the next question.')
+    alert('you guessed it right, now go to the next question.');
+    correctAnswers=correctAnswers+1;
     // console.log(myFavSport);
 }else if (myFavCar=='lada'){
+    alert(`you got it wrong `);
     // console.log(myFavSport);
 }else {
     alert('pls type on of the options (without the option num)');
@@ -43,31 +48,34 @@ if(myFavCar=='lamborghini' ){
 
 
 
-let myFavFood= prompt(`third question: what is my favorite  food? 
+let myFavFooda= prompt(`third question: what is my favorite  food? 
 (just type the name without the option number)
 
 1- mansaf   2- bread`).toLowerCase();
 
-if(myFavFood== 'mansaf'){
+if(myFavFooda== 'mansaf'){
     alert('you guessed it right, now go to the next question.')
+    correctAnswers=correctAnswers+1;
     // console.log(myFavFood);
-}else if (myFavFood=='bread') {
+}else if (myFavFooda=='bread') {
     // console.log(myFavFood);
+    alert(`you got it wrong `);
 }else{ 
     alert('pls type on of the options (without the option num)');
 
 }
 
 // 4th question
-let myFavMovie= prompt(`fourth question: what is my favorite  movie? 
-(just type the name without the option number)
-
+let myFavMovi= prompt(`fourth question: what is my favorite  movie? 
+(just type the name without the option number
 1- avengers   2- justice league`).toLowerCase();
 
-if(myFavMovie== 'avengers'){
-    alert('you guessed it right, now go to the next question.')
+if(myFavMovi== 'avengers'){
+    alert('you guessed it right, now go to the next question.');
+    correctAnswers=correctAnswers+1;
     // console.log(myFavMovie);
-}else if (myFavMovie=='justice league') {
+}else if (myFavMovi=='justice league') {
+    alert(`you got it wrong `);
     // console.log(myFavMovie);
 }else{ 
     alert('pls type on of the options (without the option num)');
@@ -75,15 +83,17 @@ if(myFavMovie== 'avengers'){
 }
 
 // fifth question 
-let myFavAthlete= prompt(`final  question: what is my favorite car athlete? 
+let myFavAthlete= prompt(`who is my favorite athlete? 
 (just type the name without the option number)
 
 1- messi   2- mohammed ali`).toLowerCase();
 
 if(myFavAthlete== 'mohammed ali'){
     alert('you guessed it right, now go to the next question.')
+    correctAnswers=correctAnswers+1;
     // console.log(myFavAthlete);
 }else if (myFavAthlete=='messi') {
+    alert(`you got it wrong `);
     // console.log(myFavAthlete);
 }else{ 
     alert('pls type on of the options (without the option num)');
@@ -91,5 +101,64 @@ if(myFavAthlete== 'mohammed ali'){
 }
 
 
+//6th question
+
+let luckyNum=prompt(`so ${name} can you guess my lucky number?
+hint ( its between 1-8) take a guess below . `);
+
+
+
+  for (var i=1;i<=4;i++){
+      var attempt= 4-i;
+      if (luckyNum == 4){
+          alert(`yay, ${name} you got it right it is 4 `);
+          correctAnswers=correctAnswers+1;
+          break;
+      }else if (luckyNum < 4 ) {
+         luckyNum= prompt(`no ${name} go higher attempts left ${attempt} `)
+      }else if (luckyNum > 4 ) {
+        luckyNum= prompt(`no ${name} go lower attempts left ${attempt}`)
+    } else {
+        luckyNum= prompt(`this is not a valid choice pls choose a number  between 
+        1 and 8 attempts left ${attempt}`);
+    } if (attempt==1 && luckyNum != 4 ){
+        alert(`ohh your out of attempts the number was 4`);
+    } 
+      
+  }
+
+//7th question 
+  let myFavMovie=['avengers','the god father', 'black panther'];
+
+  let guess =prompt(`what is my favorite movie?`).toLowerCase();
+   
+
+  var result= myFavMovie.includes(guess);
+  console.log(result);
+
+
+for (var i =0;i<6;i++){
+    var attempts=5-i
+    var result= myFavMovie.includes(guess);
+    if (result==true){
+        alert(`you got it right`);
+        correctAnswers=correctAnswers+1;
+        break;
+      }else if(attempts==0){
+          alert(`sorry ,you have no more attempts the  right answers are
+           ${myFavMovie}`);
+      }
+      else{
+        guess =prompt(`try again ? you have ${attempts} attempts left`);
+      }
+}
+ 
+
+   
+
+
+
+
+
 alert(`so ${name} I hope you liked that quiz and found it entertaining
-have a good day `);
+have a good day number of correct answers  is ${correctAnswers} `);
