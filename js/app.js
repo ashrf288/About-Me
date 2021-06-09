@@ -11,137 +11,146 @@ so if your ready click ok.  `);
 
 // // first question
 
-let myFavSport= prompt(`first question: what is my favorite soprt? 
-(just type the name without the option number)
+let myFavSport= prompt(`first question: do i like boxing?)
 
-1- football   2- boxing`).toLowerCase();
+1- yes/y   2- no/n`).toLowerCase();
 
 for(var i=0;i<2;i){
-if(myFavSport== 'boxing'){
+if(myFavSport== 'yes'|| myFavSport=='y' ){
     alert('you guessed it right, now go to the next question.');
     correctAnswers++;
     break;
     // console.log(myFavSport);
-}else if (myFavSport=='football') {
+}else if (myFavSport=='no'|| myFavSport=='n') {
     alert(`you got it wrong `);
     // console.log(myFavSport);
     break;
 }else {
-        alert('pls type one of the options (without the option num)');
-        myFavSport= prompt(`first question: what is my favorite soprt? 
-    (just type the name without the option number)
+        alert('you should answer with yes / y or no /n');
+        myFavSport= prompt(`first question: do i like boxing? 
     
-    1- football   2- boxing`).toLowerCase();
+    
+    1- yes/y   2- no/n `).toLowerCase();
     
 }
 }
 
 // //secound question
 
-let myFavCar= prompt(`second question: what is my favorite car type? 
-(just type the name without the option number)
+let myFavCar= prompt(`second question: do i like lamborghini ca? 
 
-1- lamborghini   2- lada`).toLowerCase();
+
+1- yes/y   2- no/n `).toLowerCase();
 
 for(var i=0;i<2;i){
-if(myFavCar=='lamborghini' ){
-    alert('you guessed it right, now go to the next question.');
-    correctAnswers++;
-    break;
-    // console.log(myFavSport);
-}else if (myFavCar=='lada'){
-    alert(`you got it wrong `);
-    break;
-    // console.log(myFavSport);
-}else {
-    alert('pls type one of the options (without the option num)');
-    myFavCar= prompt(`second question: what is my favorite car type? 
-(just type the name without the option number)
-
-1- lamborghini   2- lada`).toLowerCase();
-}
-}
+    if(myFavCar== 'yes'|| myFavCar=='y' ){
+        alert('you guessed it right, now go to the next question.');
+        correctAnswers++;
+        break;
+        // console.log(myFavCar);
+    }else if (myFavCar=='no'|| myFavCar=='n') {
+        alert(`you got it wrong `);
+        // console.log(myFavCar);
+        break;
+    }else {
+            alert('you should answer with yes / y or no /n');
+            myFavCar= prompt(`second question: do i like lamborghini ca? 
+            
+            
+            1- yes/y   2- no/n `).toLowerCase();
+            
+        
+    }
+    }
 // 3rd question
 
 
 
-let myFavFooda= prompt(`third question: what is my favorite  food? 
-(just type the name without the option number)
+let myFavFooda= prompt(`third question: do i like mansaf? 
 
-1- mansaf   2- bread`).toLowerCase();
+1- yes/y   2- no/n `).toLowerCase();
+
 
 for(var i=0;i<2;i){
+    if(myFavFooda== 'yes'|| myFavFooda=='y' ){
+        alert('you guessed it right, now go to the next question.');
+        correctAnswers++;
+        break;
+        // console.log(myFavFooda);
+    }else if (myFavFooda=='no'|| myFavFooda=='n') {
+        alert(`you got it wrong `);
+        // console.log(myFavFooda);
+        break;
+    }else {
+            alert('you should answer with yes / y or no /n');
+            myFavFooda= prompt(`third question: do i like mansaf? 
 
-if(myFavFooda== 'mansaf'){
-    alert('you guessed it right, now go to the next question.')
-    correctAnswers=correctAnswers+1;
-    break;
-    // console.log(myFavFood);
-}else if (myFavFooda=='bread') {
-    break;
-    // console.log(myFavFood);
-    alert(`you got it wrong `);
-}else{ 
-    alert('pls type one of the options (without the option num)');
-    myFavFooda= prompt(`third question: what is my favorite  food? 
-(just type the name without the option number)
+1- yes/y   2- no/n `).toLowerCase();
+            
+        
+    }
+    };
 
-1- mansaf   2- bread`).toLowerCase();
 
-}
-}
 
 // 4th question
+let myFavMovi= prompt(`fourth question: do i like the god father movie? 
 
-for(var i=0;i<2;i){
-let myFavMovi= prompt(`fourth question: what is my favorite  movie? 
-(just type the name without the option number
-1- avengers   2- justice league`).toLowerCase();
+    1- yes/y   2- no/n `).toLowerCase();
 
-if(myFavMovi== 'avengers'){
-    alert('you guessed it right, now go to the next question.');
-    correctAnswers++;
-    break;
-    // console.log(myFavMovie);
-}else if (myFavMovi=='justice league') {
-    alert(`you got it wrong `);
-    break;
-    // console.log(myFavMovie);
-}else{ 
-    alert('pls type one of the options (without the option num)');
-    myFavMovi= prompt(`fourth question: what is my favorite  movie? 
-(just type the name without the option number
-1- avengers   2- justice league`).toLowerCase();
+    for(var i=0;i<2;i){
+        if(myFavMovi== 'yes'|| myFavMovi=='y' ){
+            alert('you guessed it right, now go to the next question.');
+            correctAnswers++;
+            break;
+            // console.log(myFavMovi);
+        }else if (myFavMovi=='no'|| myFavMovi=='n') {
+            alert(`you got it wrong `);
+            // console.log(myFavMovi);
+            break;
+        }else {
+                alert('you should answer with yes / y or no /n');
+                myFavMovi= prompt(`fourth question: what is my favorite  movie? 
+                
+                    1- yes/y   2- no/n `).toLowerCase();
+                
+                
+            
+        }
+        }
 
 
-}
-}
 
 // fifth question 
+let myFavAthlete= prompt(` is messi my favorite athlete? 
+
+1- yes/y   2- no/n `).toLowerCase();
+                
+
 for(var i=0;i<2;i){
-let myFavAthlete= prompt(`who is my favorite athlete? 
-(just type the name without the option number)
+    if(myFavAthlete== 'no'|| myFavAthlete=='n' ){
+        alert('you guessed it right, now go to the next question.');
+        correctAnswers++;
+        break;
+        // console.log(myFavAthlete);
+    }else if (myFavAthlete=='yes'|| myFavAthlete=='y') {
+        alert(`you got it wrong `);
+        // console.log(myFavAthlete);
+        break;
+    }else {
+            alert('you should answer with yes / y or no /n');
+            myFavAthlete= prompt(` is messi my favorite athlete? 
 
-1- messi   2- mohammed ali`).toLowerCase();
+            1- yes/y   2- no/n `).toLowerCase();
+                            
+            
+            
+        
+    }
+    }
 
-if(myFavAthlete== 'mohammed ali'){
-    alert('you guessed it right, now go to the next question.')
-    break;
-    correctAnswers=correctAnswers+1;
-    // console.log(myFavAthlete);
-}else if (myFavAthlete=='messi') {
-    alert(`you got it wrong `);
-    break;
-    // console.log(myFavAthlete);
-}else{ 
-    alert('pls type one of the options (without the option num)');
-    myFavAthlete= prompt(`who is my favorite athlete? 
-(just type the name without the option number)
 
-1- messi   2- mohammed ali`).toLowerCase();
 
-}
-}
 
 
 //6th question
