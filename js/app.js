@@ -16,33 +16,50 @@ let myFavSport= prompt(`first question: what is my favorite soprt?
 
 1- football   2- boxing`).toLowerCase();
 
-
+for(var i=0;i<2;i){
 if(myFavSport== 'boxing'){
     alert('you guessed it right, now go to the next question.');
-    correctAnswers=correctAnswers+1;
+    correctAnswers++;
+    break;
     // console.log(myFavSport);
 }else if (myFavSport=='football') {
     alert(`you got it wrong `);
     // console.log(myFavSport);
-}else{ 
-    alert('pls type on of the options (without the option num)');
-
+    break;
+}else {
+        alert('pls type one of the options (without the option num)');
+        myFavSport= prompt(`first question: what is my favorite soprt? 
+    (just type the name without the option number)
+    
+    1- football   2- boxing`).toLowerCase();
+    
+}
 }
 
 // //secound question
+
 let myFavCar= prompt(`second question: what is my favorite car type? 
 (just type the name without the option number)
 
 1- lamborghini   2- lada`).toLowerCase();
+
+for(var i=0;i<2;i){
 if(myFavCar=='lamborghini' ){
     alert('you guessed it right, now go to the next question.');
-    correctAnswers=correctAnswers+1;
+    correctAnswers++;
+    break;
     // console.log(myFavSport);
 }else if (myFavCar=='lada'){
     alert(`you got it wrong `);
+    break;
     // console.log(myFavSport);
 }else {
-    alert('pls type on of the options (without the option num)');
+    alert('pls type one of the options (without the option num)');
+    myFavCar= prompt(`second question: what is my favorite car type? 
+(just type the name without the option number)
+
+1- lamborghini   2- lada`).toLowerCase();
+}
 }
 // 3rd question
 
@@ -53,36 +70,55 @@ let myFavFooda= prompt(`third question: what is my favorite  food?
 
 1- mansaf   2- bread`).toLowerCase();
 
+for(var i=0;i<2;i){
+
 if(myFavFooda== 'mansaf'){
     alert('you guessed it right, now go to the next question.')
     correctAnswers=correctAnswers+1;
+    break;
     // console.log(myFavFood);
 }else if (myFavFooda=='bread') {
+    break;
     // console.log(myFavFood);
     alert(`you got it wrong `);
 }else{ 
-    alert('pls type on of the options (without the option num)');
+    alert('pls type one of the options (without the option num)');
+    myFavFooda= prompt(`third question: what is my favorite  food? 
+(just type the name without the option number)
 
+1- mansaf   2- bread`).toLowerCase();
+
+}
 }
 
 // 4th question
+
+for(var i=0;i<2;i){
 let myFavMovi= prompt(`fourth question: what is my favorite  movie? 
 (just type the name without the option number
 1- avengers   2- justice league`).toLowerCase();
 
 if(myFavMovi== 'avengers'){
     alert('you guessed it right, now go to the next question.');
-    correctAnswers=correctAnswers+1;
+    correctAnswers++;
+    break;
     // console.log(myFavMovie);
 }else if (myFavMovi=='justice league') {
     alert(`you got it wrong `);
+    break;
     // console.log(myFavMovie);
 }else{ 
-    alert('pls type on of the options (without the option num)');
+    alert('pls type one of the options (without the option num)');
+    myFavMovi= prompt(`fourth question: what is my favorite  movie? 
+(just type the name without the option number
+1- avengers   2- justice league`).toLowerCase();
 
+
+}
 }
 
 // fifth question 
+for(var i=0;i<2;i){
 let myFavAthlete= prompt(`who is my favorite athlete? 
 (just type the name without the option number)
 
@@ -90,14 +126,21 @@ let myFavAthlete= prompt(`who is my favorite athlete?
 
 if(myFavAthlete== 'mohammed ali'){
     alert('you guessed it right, now go to the next question.')
+    break;
     correctAnswers=correctAnswers+1;
     // console.log(myFavAthlete);
 }else if (myFavAthlete=='messi') {
     alert(`you got it wrong `);
+    break;
     // console.log(myFavAthlete);
 }else{ 
-    alert('pls type on of the options (without the option num)');
+    alert('pls type one of the options (without the option num)');
+    myFavAthlete= prompt(`who is my favorite athlete? 
+(just type the name without the option number)
 
+1- messi   2- mohammed ali`).toLowerCase();
+
+}
 }
 
 

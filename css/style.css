@@ -14,9 +14,7 @@ header{
    
 }
 
-header h1 {
-    border: black;
-}
+
 main{
    
     text-align: center;
@@ -31,26 +29,29 @@ main div p {
 
 
 ul{
-    
+    margin-left: 10px ;
+    list-style-type: circle;
     text-align: left;
     list-style: none;
+   
+    color: white;
+    list-style-type: circle;
+    padding: 15px;
+
     
 }
+
   h2{
       font-size: 33px;
       background-color:#a9f1df ;
       border-radius: 15px;
   }
-.movies{
-    text-align: center;
-    color: white;
-    list-style-type: circle;
-
-}
 img{
     width: 40%;
+    list-style-type: circle;
 }
 footer{
     background-color:#ffffc7 ;
-    text-align: center;
+   text-align: center;
 }
+
