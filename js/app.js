@@ -1,7 +1,7 @@
 'use strict';
 
 
-//welcome prompt
+
 
 let userName = prompt('hello, what is your name ?');
 let counter = 0;
@@ -9,7 +9,7 @@ let counter = 0;
 alert(`nice to meet you ${userName} , welcome to the quize game (me editoin) were you have to answer a series of  question about me .
 so if your ready click ok.  `);
 
-// Question 1-5
+
 
 function questins(questionText, correctAnswer){
   let userInput;
@@ -35,7 +35,6 @@ for (let i = 0; i < question.length; i++){
   questins(question[i], answer[i]);
 }
 
-// 6th question
 
 let luckyNum=prompt(`so ${userName} can you guess my lucky number?
 hint ( its between 1-8) take a guess below . `);
@@ -61,7 +60,7 @@ for (let i=1;i<=4;i++){
 
 }
 
-// 7th question
+
 
 let myFavMovie=['avengers','the god father', 'black panther'];
 
